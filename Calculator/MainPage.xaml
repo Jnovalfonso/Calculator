@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+    <Grid RowDefinitions=".30*, .14*, .14*, .14*, .14*, .14*"
+          ColumnDefinitions=".25*, .25*, .25*, .25*"
+          Padding="10"
+          Margin="20"
+          BackgroundColor="Black">
+
+
+        <!-- Result Label -->
+        <Label Grid.ColumnSpan="4"
+            BackgroundColor="Black"
+            Text="0"
+            FontSize="Header"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="0,0,10,10"
+            x:Name="result"
+                />
+        
+        <!-- CALCULATION BUTTONS -->
+        
+        <!-- AC -->
+        <Button Grid.Row="1"
+            Grid.Column="0"
+            Margin="5"
+            Padding="10"
+            Background="gray"
+            Text="AC"
+            FontSize="Large"
+            TextColor="Black"
+            x:Name="ac"
+            Clicked="onAcClicked"
+                />
+        
+        <!-- +/- -->
+        <Button Grid.Row="1"
+            Grid.Column="1"
+            Margin="5"
+            Padding="10"
+            Background="gray"
+            Text="+/-"
+            FontSize="Large"
+            TextColor="Black"
+            x:Name="changeSymbol"
+            Clicked="onChangeSymbolClicked"
+                />
+
+        <!-- % -->
+        <Button Grid.Row="1"
+            Grid.Column="2"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="Gray"
+            Text="%"
+            FontSize="Large"
+            TextColor="Black"
+            x:Name="percentage"
+            Clicked="onPercentageClicked"
+                />
+
+        <!-- / -->
+        <Button Grid.Row="1"
+            Grid.Column="3"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="Orange"
+            Text="/"
+            FontSize="Large"
+            TextColor="White"
+            x:Name="divide"
+                />
+
+        <!-- X -->
+        <Button Grid.Row="2"
+            Grid.Column="3"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="Orange"
+            Text="X"
+            FontSize="Large"
+            TextColor="White"
+            x:Name="multiply"
+        />
+        <!-- _ -->
+        <Button Grid.Row="3"
+            Grid.Column="3"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="Orange"
+            Text="_"
+            FontSize="Large"
+            TextColor="White"
+            x:Name="subtract"
+        />
+
+        <!-- + -->
+        <Button Grid.Row="4"
+            Grid.Column="3"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="Orange"
+            Text="+"
+            FontSize="Large"
+            TextColor="White"
+            x:Name="add"
+        />
+
+        <!-- = -->
+        <Button Grid.Row="5"
+            Grid.Column="3"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="Orange"
+            Text="="
+            FontSize="Large"
+            TextColor="White"
+            x:Name="equal"
+        />
+
+        <!-- NUMBERS -->
+        
+        <Button Grid.Row="2"
+            Grid.Column="0"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="DarkGray"
+            Text="7"
+            FontSize="Large"
+            TextColor="White"   
+            x:Name="seven"
+            Clicked="onNumberClicked"
+                />
+        <Button Grid.Row="2"
+            Grid.Column="1"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="DarkGray"
+            Text="8"
+            FontSize="Large"
+            TextColor="White"
+            x:Name="eight"
+            Clicked="onNumberClicked"
+                />
+        <Button Grid.Row="2"
+            Grid.Column="2"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="DarkGray"
+            Text="9"
+            FontSize="Large"
+            TextColor="White"
+            x:Name="nine"
+            Clicked="onNumberClicked"
+                />
+        
+        <Button Grid.Row="3"
+            Grid.Column="0"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="DarkGray"
+            Text="4"
+            FontSize="Large"
+            TextColor="White"
+            x:Name="four"
+            Clicked="onNumberClicked"
+                />
+        <Button Grid.Row="3"
+            Grid.Column="1"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="DarkGray"
+            Text="5"
+            FontSize="Large"
+            TextColor="White"
+            x:Name="five"
+            Clicked="onNumberClicked"
+                />
+        <Button Grid.Row="3"
+            Grid.Column="2"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="DarkGray"
+            Text="6"
+            FontSize="Large"
+            TextColor="White"
+            x:Name="six"
+            Clicked="onNumberClicked"
+                />
+        
+        <Button Grid.Row="4"
+            Grid.Column="0"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="DarkGray"
+            Text="1"
+            FontSize="Large"
+            TextColor="White"
+            x:Name="one"
+            Clicked="onNumberClicked"
+                />
+        <Button Grid.Row="4"
+            Grid.Column="1"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="DarkGray"
+            Text="2"
+            FontSize="Large"
+            TextColor="White"
+            x:Name="two"
+            Clicked="onNumberClicked"
+                />
+        <Button Grid.Row="4"
+            Grid.Column="2"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="DarkGray"
+            Text="3"
+            FontSize="Large"
+            TextColor="White"
+            x:Name="three"
+            Clicked="onNumberClicked"
+                />
+        
+        <Button Grid.Row="5"
+            Grid.ColumnSpan="2"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="DarkGray"
+            Text="0"
+            FontSize="Large"
+            TextColor="White"
+            x:Name="zero"
+            Clicked="onNumberClicked"
+                />
+
+        <!-- DOT -->
+        <Button Grid.Row="5"
+            Grid.Column="2"
+            Margin="5"
+            Padding="10"
+            BackgroundColor="DarkGray"
+            Text=","
+            FontSize="Large"
+            TextColor="White"
+            x:Name="dot"
+            Clicked="onNumberClicked"
+                />
+        
+    </Grid>
+
+</ContentPage>
