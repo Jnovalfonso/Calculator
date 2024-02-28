@@ -33,7 +33,7 @@
             FontSize="Large"
             TextColor="Black"
             x:Name="ac"
-            Clicked="onAcClicked"
+            Clicked="AcClicked"
                 />
         
         <!-- +/- -->
@@ -46,7 +46,7 @@
             FontSize="Large"
             TextColor="Black"
             x:Name="changeSymbol"
-            Clicked="onChangeSymbolClicked"
+            Clicked="ChangeSymbolClicked"
                 />
 
         <!-- % -->
@@ -59,7 +59,7 @@
             FontSize="Large"
             TextColor="Black"
             x:Name="percentage"
-            Clicked="onPercentageClicked"
+            Clicked="PercentageClicked"
                 />
 
         <!-- / -->
@@ -72,6 +72,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="divide"
+            Clicked="OperatorClicked"
                 />
 
         <!-- X -->
@@ -84,6 +85,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="multiply"
+            Clicked="OperatorClicked"
         />
         <!-- _ -->
         <Button Grid.Row="3"
@@ -95,6 +97,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="subtract"
+            Clicked="OperatorClicked"
         />
 
         <!-- + -->
@@ -107,6 +110,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="add"
+            Clicked="OperatorClicked"
         />
 
         <!-- = -->
@@ -119,6 +123,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="equal"
+            Clicked="EqualClicked"
         />
 
         <!-- NUMBERS -->
@@ -132,7 +137,7 @@
             FontSize="Large"
             TextColor="White"   
             x:Name="seven"
-            Clicked="onNumberClicked"
+            Clicked="NumberClicked"
                 />
         <Button Grid.Row="2"
             Grid.Column="1"
@@ -143,7 +148,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="eight"
-            Clicked="onNumberClicked"
+            Clicked="NumberClicked"
                 />
         <Button Grid.Row="2"
             Grid.Column="2"
@@ -154,7 +159,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="nine"
-            Clicked="onNumberClicked"
+            Clicked="NumberClicked"
                 />
         
         <Button Grid.Row="3"
@@ -166,7 +171,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="four"
-            Clicked="onNumberClicked"
+            Clicked="NumberClicked"
                 />
         <Button Grid.Row="3"
             Grid.Column="1"
@@ -177,7 +182,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="five"
-            Clicked="onNumberClicked"
+            Clicked="NumberClicked"
                 />
         <Button Grid.Row="3"
             Grid.Column="2"
@@ -188,7 +193,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="six"
-            Clicked="onNumberClicked"
+            Clicked="NumberClicked"
                 />
         
         <Button Grid.Row="4"
@@ -200,7 +205,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="one"
-            Clicked="onNumberClicked"
+            Clicked="NumberClicked"
                 />
         <Button Grid.Row="4"
             Grid.Column="1"
@@ -211,7 +216,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="two"
-            Clicked="onNumberClicked"
+            Clicked="NumberClicked"
                 />
         <Button Grid.Row="4"
             Grid.Column="2"
@@ -222,7 +227,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="three"
-            Clicked="onNumberClicked"
+            Clicked="NumberClicked"
                 />
         
         <Button Grid.Row="5"
@@ -234,7 +239,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="zero"
-            Clicked="onNumberClicked"
+            Clicked="NumberClicked"
                 />
 
         <!-- DOT -->
@@ -247,7 +252,7 @@
             FontSize="Large"
             TextColor="White"
             x:Name="dot"
-            Clicked="onNumberClicked"
+            Clicked="NumberClicked"
                 />
         
     </Grid>
