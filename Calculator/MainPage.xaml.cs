@@ -32,10 +32,17 @@ namespace Calculator
         // PERCENTAGE METHOD
         public void PercentageClicked (object sender, EventArgs e)
         {
-            // Divide 'number' by 100
             float number = float.Parse(result.Text);
             number /= 100;
+
+            if (operatorSymbol == "+" || operatorSymbol == "_")
+            {
+                number = firstNumber * number;
+            }
+            
+
             result.Text = number.ToString();
+           
         }
 
         // OPERATORS METHOD
